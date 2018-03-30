@@ -1,0 +1,23 @@
+.emptyMessage {
+    color: red;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.doneMessage {
+    color: green;
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+li {
+    margin-bottom: 7px;
+    font-size: 1.2em;
+}
+
+li > button {
+    margin-left: 6px;
+    }
+    button > span {
+    color: green;
+}
