@@ -1,0 +1,8 @@
+<lo ng-repeat="item in found">
+    <li> Short name: {{ item.short_name }} </li>
+    <li> Name: {{ item.name }} </li>
+    <li> Description: {{ item.description }} </li>
+    <button class="btn btn-secondary" ng-click="onRemove({index: $index});">Don't want this one!</button>
+    <hr>
+</lo>
+<h2 class="messageNotFound" style="color:red" ng-if="found.length == 0">Nothing found</h2>
