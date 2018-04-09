@@ -2,8 +2,6 @@
 <span>Categories</span>
 
 <h3>List with categories</h3>
-<ul>
-    <li ng-repeat="item in categories.items" ui-sref="items({category:item.short_name})">
-        {{item.name}}
-    </li>
-</ul>
+
+
+<categories-list items="categories.items"></categories-list>
