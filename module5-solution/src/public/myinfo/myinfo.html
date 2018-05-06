@@ -1,0 +1,50 @@
+<div class="container">
+    <div ng-show="!myInfoCtrl.userInformation.hasOwnProperty('item')">
+        <h1 class="text-center"> Not Signed Up Yet. 
+            <a ui-sref="public.signup">
+                <strong>Sign up Now!</strong> 
+            </a> 
+        </h1>
+    </div>
+    <div ng-if="myInfoCtrl.userInformation.hasOwnProperty('firstName')">
+        <h1 class="text-center"><strong>User's Information</strong></h1>
+        <hr>
+        <h2>
+            <div>
+                <label>First Name:</label>
+                <span>{{myInfoCtrl.userInformation.firstName}}</span>
+            </div>
+            <div>
+                <label>Last Name:</label>
+                <span>{{myInfoCtrl.userInformation.lastName}}</span>
+            </div>
+            <div>
+                <label>Email:</label>
+                <span>{{myInfoCtrl.userInformation.email}}</span>
+            </div>
+            <div>
+                <label>Phone:</label>
+                <span>{{myInfoCtrl.userInformation.phone}}</span>
+            </div>
+        </h2>
+        <hr>
+        <h1 class="text-center"><strong>Favourite Dish</strong></h1>
+        <h2>
+            <div>
+                <label>Title:</label>
+                <span>{{myInfoCtrl.userInformation.item.name}}</span>
+            </div>
+            <div>
+                <label>Description:</label>
+                <span>{{myInfoCtrl.userInformation.item.description}}</span>
+            </div>
+            <hr>
+            <div class="text-center">
+                <img class="img-responsive img-thumbnail rounded mx-auto d-block" width="250" height="150" 
+                     ng-src="{{myInfoCtrl.basePath}}/images/{{myInfoCtrl.userInformation.item.short_name}}.jpg"
+                     alt="{{myInfoCtrl.userInformation.item.name}}">
+            </div>
+        </h2>
+    </div>
+
+</div>

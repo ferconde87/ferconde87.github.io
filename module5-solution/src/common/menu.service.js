@@ -26,19 +26,14 @@ function MenuService($http, ApiPath) {
     });
   };
 
-  service.getShortNameItems = function (){
-    var promise = service.getMenuItems();
-    var shortNameItems = [];
-    var menuItems = [];
-    promise.then( function (data){
-      menuItems = data.menu_items;
-      for(var i = 0; i < menuItems.length; i++){
-        shortNameItems.push(menuItems[i].short_name);
+  service.getItemFromShortName = function(shortName){
+    return $http.get(ApiPath + '/menu_items/' + shortName + '.json').then(
+      function (response) {
+        return response.data;
       }
-    })
-    return shortNameItems;
+    )
+    
   }
-
 }
 
 

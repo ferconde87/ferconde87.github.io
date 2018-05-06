@@ -25,9 +25,6 @@ function routeConfig ($stateProvider) {
       controller: 'SignUpController',
       controllerAs: 'signUpCtrl',
       resolve: {
-        shortNameItems: ['MenuService', function(MenuService) {
-          return MenuService.getShortNameItems();
-        }],
         menuItems: ['MenuService', function (MenuService) {
           return MenuService.getMenuItems();
         }]
@@ -41,6 +38,17 @@ function routeConfig ($stateProvider) {
       resolve: {
         menuCategories: ['MenuService', function (MenuService) {
           return MenuService.getCategories();
+        }]
+      }
+    })
+    .state('public.myinfo', {
+      url: '/myinfo',
+      templateUrl: 'src/public/myinfo/myinfo.html',
+      controller: 'MyInfoController',
+      controllerAs: 'myInfoCtrl',
+      resolve: {
+        userInformation: ['UserInformationService', function (UserInformationService){
+          return UserInformationService.getUserInformation();
         }]
       }
     })
