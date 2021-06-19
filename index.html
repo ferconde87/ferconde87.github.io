@@ -1,57 +1,277 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-        <h1 class="center"> Fernando Leonel Conde </h1>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Bootcamp</title>
+</head>
+<body>
 
-        <h2 class="center about">
-            Lifelong learner. I love learning new things all the time. All sort of things based-science related generally call my attention. Always trying to improve. Passionate about cutting edge technology and the new possibilities that bring us. 
-        </h2>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light navbar-dar py-3 fixed-top">
+    <div class="container">
+      <a href="#" class="navbar-brand">Fernando Leonel Conde</a>
 
-        <div class="work text">
-            <div class="work-header">
-                <div class="work-header-logo">
-                    <img class="work-header-logo-img" src="resources/gcba.png">
-                </div>
+      <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon text-primary"><i class="bi bi-list text-primary mx-auto"></i></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#work" class="nav-link">Work</a>
+          </li>
+          <li class="nav-item">
+            <a href="#education" class="nav-link">Education</a>
+          </li>
+          <li class="nav-item">
+            <a href="#extracurriculars" class="nav-link">Extracurriculars</a>
+          </li>
+        </ul>
+      </div>
 
-                <div class="work-header-info">
-                    <div class="work-header-info-item">
-                        Full Stack Developer
-                    </div>
-                    <div class="work-header-info-item">
-                        Government of Buenos Aires City
-                    </div>
-                    <div class="work-header-info-item">
-                        2017 November - Current
-                    </div>
-                    <div class="work-header-info-item">
-                        Ciudad de Buenos Aires, Buenos Aires, Argentina
-                    </div>
-                </div>
+    </div>
+  </nav>
 
-            </div>
-
-            <div class="work-description">
-                I am part of the Clinical Medical History and Hospital Management System's Development used in hospitals and community rooms of the Government of Buenos Aires city.
-The system development is build on a modern web architecture (Angular JS, Django, Django REST Framework). The system is used on a daily basis for 2-3 thousand of users (Professional in Medicine and Administrators) and has a database of more than half million patients.
-The tasks that I develop are design, implement and build new modules of the system, fix bugs and errors and add new features into the different modules. I participate in the Back-end as well as the Front-end part of the system.
-            </div>
-
+    <!-- Intro   -->
+  <section class="bg-light text-dark p-5 p-lg-0 pt-lg-5 pb-0 text-center text-sm-start">
+    <div class="container">
+      <div class="row">
+        <div class="col-md align-items-center justify-content-center">
+          <img class="img-fluid w-25 mx-auto d-block rounded-circle pt-5 pb-3" src="img/fernando.jpeg" alt="">  
         </div>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="" async defer></script>
-    </body>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          <p class="lead">Lifelong learner. I love learning new things all the time. All sort of things based-science related generally call my attention. 
+            Always trying to improve. Passionate about cutting edge technology and the new possibilities that bring us.
+          </p>
+          <a href="https://www.linkedin.com/in/fernando-leonel-conde-99616275/"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+          <a href="https://github.com/ferconde87"><i class="bi bi-github text-dark mx-1"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience -->
+  <section class="bg-light text-dark p-5 pb-0 text-start" id="work">
+    <div class="container">
+      <h2 class="mb-4">Work Experience</h2>
+      <div class="row">
+        <div class="col-md-2">
+          <img class="img-fluid d-none d-sm-block mb-1 px-2" src="img/freelance.png" alt="">
+        </div>
+        <div class="col-md-10 bg-light mb-1 px-4">
+          <p class="lead mb-0"><strong>Freelance Developer</strong></p>
+          <p class="lead mb-0">Independet Professional</p>
+          <p class="mb-0">January 2019 - Current</p>
+          <p class="mb-2">Remote</p>
+          <p class="mb-1">
+            Currently working at SignTime as a Ruby on Rails Developer. For the frontend we use Bootstrap, Halm, jQuery. 
+            My tasks are adding new features, bug-fixing, coding reviews, refactoring and adding tests.
+          </p>
+          <p>
+            I have been working as a Contractor since the beginning of 2019. Developing, maintaining and adding new features 
+            to web and mobile applications mainly for start-ups and small companies.
+            My favourites technologies to work with are Ruby on Rails for Web applications and Kotlin for Android applications.
+          </p>    
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <img class="img-fluid d-none d-sm-block mb-1 px-2" src="img/gcba.jpeg" alt="">
+        </div>
+        <div class="col-md-10 bg-light mb-1 px-4">
+          <p class="lead mb-0"><strong>Full Stack Web Developer</strong></p>
+          <p class="lead mb-0">Government of Buenos Aires City</p>
+          <p class="mb-0">July 2017 - December 2018</p>
+          <p class="mb-2">Buenos Aires, Argentina</p>
+          <p class="mb-1">
+            I was part of the Clinical Medical History and Hospital Management System’s Develop-
+            ment used in hospitals and community rooms of the Government of Buenos Aires city.
+            We used a modern web architecture (Angular JS, Django, Django REST Framework). At
+            the time I was involved the system was used on a daily basis for around 3000 users 
+            (Professional in Medicine and Administrators) and had a database of more than half million
+            patients.
+          </p>
+          <p>
+            My tasks there were design, implement and build new modules of the system, fix bugs
+            and errors and add new features into the different modules. I participated in both side
+            of the system: the backend and the frontend.
+          </p>    
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <img class="img-fluid d-none d-sm-block mb-1 px-2" src="img/carleton.png" alt="">
+        </div>
+        <div class="col-md-10 bg-light mb-1 px-4">
+          <p class="lead mb-0"><strong>C++ Developer & Visiting Researcher</strong></p>
+          <p class="lead mb-0">Advanced Real-Time Simulation Lab at Carleton University, Ottawa, Canada</p>
+          <p class="mb-0">January 2017 - June 2017</p>
+          <p class="mb-2">Ottawa, Ontario, Canada</p>
+          <p class="mb-4">
+            I earned a scholarship to work at Advanced Real-Time Simulation Lab in Carleton University as a Visiting Researcher for 6 months.
+            First I worked in a team helping to develop scheduling algorithms for LTE Network Simulations. 
+            I developed the Proportional Fair algorithm with different variants. Then I worked in Embedded
+            Systems researching how to develop a PID Controller for a Quadcopter in C++.
+          </p>
+          <!-- <p>
+            My tasks there were design, implement and build new modules of the system, fix bugs
+            and errors and add new features into the different modules. I participated in both side
+            of the system: the backend and the frontend.
+          </p>     -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <img class="img-fluid d-none d-sm-block mb-1 px-2" src="img/interfaces.png" alt="">
+        </div>
+        <div class="col-md-10 bg-light mb-1 px-4">
+          <p class="lead mb-0"><strong>.NET Developer</strong></p>
+          <p class="lead mb-0">Interfaces S.A.</p>
+          <p class="mb-0">November 2013 - Dicember 2016</p>
+          <p class="mb-2">Buenos Aires, Argentina</p>
+          <p class="mb-1">
+            Software development for the oil industry, specifically to support the reservoir engineering using C# and .NET technologies. 
+            The software was about Reservoir Visualization, Analysis & Management Software.
+          </p>
+          <p>
+            I developed several tools that involved doing the UI design, doing the connection with the database (Oracle and Microsoft Access) 
+            and doing calculation with data. In order to do these calculations I had to read books and papers and talk with chemists and
+            geologists.
+          </p>    
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <img class="img-fluid d-none d-sm-block mb-1 px-2" src="img/viarural.png" alt="">
+        </div>
+        <div class="col-md-10 bg-light mb-1 px-4">
+          <p class="lead mb-0"><strong>Web Developer</strong></p>
+          <p class="lead mb-0">Viarural S.A.</p>
+          <p class="mb-0">November 2012 - October 2013</p>
+          <p class="mb-2">Buenos Aires, Argentina</p>
+          <p class="mb-1">
+            System’s Development using PHP, Javascript (JQuery, Ajax), HTML5, CSS3.
+          </p>
+          <p>
+            I developed small HTML pages and also I developed the system registration of a motorcycle sales website and I helped with the searching process of the motorcycles using 
+            JQuery and PHP.
+          </p>    
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="bg-light text-dark p-5 pb-0 text-start" id="education">
+    <div class="container">
+      <h2 class="mb-4">Education</h2>
+      <div class="row">
+        <div class="col-md-2 mb-4">
+          <img class="img-fluid d-none d-sm-block mb-1 px-2" src="img/uba.png" alt="">
+        </div>
+        <div class="col-md-10 bg-light mb-1 px-4">
+          <p class="lead mb-0"><strong>Licenciatura en Ciencias de la Computación</strong></p>
+          <p class="lead mb-0">Universidad de Buneos Aires</p>
+          <p class="mb-0">2009 - 2016</p>
+          <p class="mb-2">Buenos Aires, Argentina</p>
+          <p class="mb-4">
+            Courses completed. Thesis remaining.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 mb-2">
+          <img class="img-fluid d-none d-sm-block mb-1 px-2" src="img/uba.png" alt="">
+        </div>
+        <div class="col-md-10 bg-light mb-1 px-4">
+          <p class="lead mb-0"><strong>Analista Universitario en Computación</strong></p>
+          <p class="lead mb-0">Universidad de Buneos Aires</p>
+          <p class="mb-0">2009 - 2015</p>
+          <p class="mb-2">Buenos Aires, Argentina</p>
+          <p class="mb-4">
+            Widely accepted as equivalent to a Bachelor in Computer Science Degree.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Extracurriculars -->
+    <section class="bg-light text-dark p-5 text-start" id="extracurriculars">
+      <div class="container">
+        <h2 class="mb-4">Extracurriculars</h2>
+        <div class="row">
+          <div class="col bg-light mb-2 px-4">
+            <p class="lead mb-1"><strong>Some courses done at Coursera:</strong></p>
+            <p class="mb-2">
+              <a href="https://www.coursera.org/account/accomplishments/specialization/GFMCSGTNPDSC" target="_blank">
+                Blockchain Specialization by University at Buffalo & The State University of New York on Coursera, March 2021
+              </a>
+            </p>
+            <p class="mb-2">
+              <a href="https://www.coursera.org/account/accomplishments/verify/SBW9XXTATUUQ" target="_blank">
+                Web Development with React by The Hong Kong University of Science and Technology on Coursera, February, 2021
+              </a>
+            </p>
+            <p class="mb-2">
+              <a href="https://coursera.org/verify/professional-cert/KD3X38BE6322" target="_blank">
+                IBM Data Science Professional Certificate by IBM through Coursera, March 2020
+              </a>
+            </p>
+            <p class="mb-2">
+              <a href="https://www.coursera.org/account/accomplishments/specialization/Z5LMHDM34GWA" target="_blank">
+                Parallel, Concurrent, and Distributed Programming in Java by Rice University on Coursera, February 2020
+              </a>
+            </p>
+            <p class="mb-2">
+              <a href="https://coursera.org/share/ecd58267f2238f5856c9f2ec12f7c7cc" target="_blank">
+                Google IT Support Professional Certificate by Google on Coursera, January 2019
+              </a>
+            </p>
+            <p class="mb-2">
+              <a href="https://www.coursera.org/account/accomplishments/verify/CAKVMEDKJVDD" target="_blank">
+                Discrete Optimization by The University of Melbourne on Coursera, November 2018
+              </a>
+            </p>
+            <p class="mb-2">
+              <a href="https://www.coursera.org/account/accomplishments/specialization/B6JVC6SVF3TQ" target="_blank">
+                Algorithms Specialization by Stanford University on Coursera, August 2018
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col bg-light my-2 px-4">
+            <p class="lead"><strong>Participated in the local ACM ICPC in Torneo Argentino de Programación 2016.</strong></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col bg-light px-4">
+            <p class="lead mb-0"><strong>Participated in the Week of Computer Science 2015 & 2016:</strong></p>
+            <p class="mb-2">Talks at the university regarding the CS degree and workshops about our work to highschool’s students.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+      <p class="lead">Copyright &copy; 2021 - Fernando Leonel Conde</p>
+      <a href="#" class="position-absolute bottom-0 end-0 p-5">
+        <i class="bi bi-arrow-up-circle h1"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
 </html>
